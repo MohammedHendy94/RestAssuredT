@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
@@ -24,6 +26,16 @@ public class Resttests1 {
         given().get("https://dummyjson.com/products/1")
                 .then().assertThat().body("title", equalTo("iPhone 9")).
                 and().body("price",equalTo(549));
+
+    }
+    @Test
+    public void TestBody1(){
+        given().when()
+        .get("https://dummyjson.com/products/1")
+                .then().body("title", equalTo("iPhone 9")).
+                and().body("price",equalTo(549))
+                .and().statusLine("HTTP/1.1 200 OK")
+                .header("content-type","application/json; charset=utf-8");
 
     }
 

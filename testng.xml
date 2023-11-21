@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT">
+        <classes>
+            <class name="tests.HMACSHA_Generator">
+                <methods>
+                    <include name="secureKey"/>
+                </methods>
+            </class>
+            <class name="tests.RegisterClientAPITests">
+                <methods>
+                    <include name="validateThatClientCanBeCreated"/>
+                    <include name="enhancedValidateThatClientCanBeCreated"/>
+                    <include name="mostEnhancedValidateThatClientCanBeCreated"/>
+                </methods>
+            </class>
+            <class name="tests.Resttests1">
+                <methods><include name="TestStatusCode"/>
+                    <include name="TestRespons"/>
+                    <include name="TestBody"/>
+                    <include name="TestBody1"/>
+                </methods>
+            </class>
+            <class name="tests.TestByDataDriven">
+            <methods>
+                <include name="testdriven"/>
+                <include name="restinvaliddriven"/>
+            </methods>
+            </class>
+            <class name="tests.TestRestPost">
+            <methods>
+                <include name="postStatusCode"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

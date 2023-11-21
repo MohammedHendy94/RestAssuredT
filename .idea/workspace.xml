@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10b9e2f6-636e-4453-8d6d-544d23a51c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/bases/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ClientInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterClientAPITests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="10b9e2f6-636e-4453-8d6d-544d23a51c98" name="Changes" comment="enhancements1 for client register tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/HMACSHA_Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/readData/ReadTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/readData/ReadTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Resttests1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Resttests1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestRestPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestRestPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/ClientInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterClientAPITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterClientAPITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ClientTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ClientTestData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -50,16 +51,71 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Hendy/Desktop/restassured/BakkappaN-RestAssuredAPITestingFramework",
+    "last_opened_file_path": "C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT",
     "onboarding.tips.debug.path": "C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RegisterClientAPITests.validateThatClientCanBeCreated">
-    <configuration name="RegisterClientAPITests.validateThatClientCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated">
+    <configuration name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/test/suites/tesngfile.xml" type="TestNG" nameIsGenerated="true">
+      <module name="RestAssuredT" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredT" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HMACSHA_Generator" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HMACSHA_Generator" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterClientAPITests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredT" />
       <extension name="coverage">
         <pattern>
@@ -69,15 +125,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.RegisterClientAPITests" />
-      <option name="METHOD_NAME" value="validateThatClientCanBeCreated" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Resttests1.TestBody1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredT" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +141,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Resttests1" />
-      <option name="METHOD_NAME" value="TestBody1" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterClientAPITests" />
+      <option name="METHOD_NAME" value="enhancedValidateThatClientCanBeCreated" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -95,67 +150,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRestPost.TestStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredT" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestRestPost" />
-      <option name="METHOD_NAME" value="TestStatusCode" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterClientAPITests" />
+      <option name="METHOD_NAME" value="mostEnhancedValidateThatClientCanBeCreated" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRestPost.postStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testthelogger" type="TestNG">
       <module name="RestAssuredT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestRestPost" />
-      <option name="METHOD_NAME" value="postStatusCode" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <shortenClasspath name="NONE" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRestPost.postregister" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestRestPost" />
-      <option name="METHOD_NAME" value="postregister" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/test/suites/tesngfile.xml" />
+      <item itemvalue="TestNG.testthelogger" />
+      <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" />
+      <item itemvalue="TestNG.RegisterClientAPITests" />
+      <item itemvalue="TestNG.HMACSHA_Generator" />
+      <item itemvalue="TestNG.RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" />
+      <item itemvalue="TestNG.RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegisterClientAPITests.validateThatClientCanBeCreated" />
-        <item itemvalue="TestNG.TestRestPost.postregister" />
-        <item itemvalue="TestNG.TestRestPost.postStatusCode" />
-        <item itemvalue="TestNG.TestRestPost.TestStatusCode" />
-        <item itemvalue="TestNG.Resttests1.TestBody1" />
+        <item itemvalue="TestNG.RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated" />
+        <item itemvalue="TestNG.RegisterClientAPITests" />
+        <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" />
+        <item itemvalue="TestNG.HMACSHA_Generator" />
+        <item itemvalue="TestNG.RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +226,20 @@
       <option name="presentableId" value="Default" />
       <updated>1700032266507</updated>
     </task>
+    <task id="LOCAL-00001" summary="enhancements1 for client register tests">
+      <option name="closed" value="true" />
+      <created>1700307433650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700307433650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="enhancements1 for client register tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhancements1 for client register tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

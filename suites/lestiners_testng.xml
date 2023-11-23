@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/test/java/tests/RegisterClientAPITests.java">
+        <classes>
+            <class name="tests.RegisterClientAPITests">
+                <methods>
+                    <include name="mostEnhancedValidateThatClientCanBeCreated"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

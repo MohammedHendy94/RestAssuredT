@@ -7,6 +7,7 @@ import com.jayway.jsonpath.JsonPath;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import listener.Listeners;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.logging.log4j.LogManager;
@@ -31,7 +32,6 @@ import static io.restassured.RestAssured.given;
 
 public class RegisterClientAPITests extends BaseTest {
     ClientInfo clientInfo;
-    private static final Logger loger = LogManager.getLogger(RegisterClientAPITests.class);
 
     @DataProvider
     public String[][] clientTestData() throws IOException, InvalidFormatException {
@@ -94,12 +94,11 @@ public class RegisterClientAPITests extends BaseTest {
     @Test(dataProvider ="clientTestData")
     public void mostEnhancedValidateThatClientCanBeCreated(String name, String email) throws JsonProcessingException {
 
-        loger.info("test started");
         clientInfo = new ClientInfo(name,email);
         String reqBody = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(clientInfo);
         clientInfo = objectMapper.readValue(reqBody,ClientInfo.class);
         ClientInfo response =
-                RestAssured.given(getRequestSpecifcations())
+                    RestAssured.given(getRequestSpecifcations()).filter(new Listeners())
                         .basePath("/api-clients")
                         .body(reqBody)
                         .post()
@@ -107,7 +106,7 @@ public class RegisterClientAPITests extends BaseTest {
                         .assertThat()
                         .statusCode(201).extract().as(ClientInfo.class);
         Assert.assertNotNull(response.getAccessToken());
-        loger.info("test finished");
+
     }
 
 

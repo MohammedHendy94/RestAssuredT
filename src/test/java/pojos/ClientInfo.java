@@ -1,7 +1,7 @@
 package pojos;
 
 public class ClientInfo {
-    private String clientName;
+    private String ClientName;
     private String clientEmail;
 
     public String getAccessToken() {
@@ -22,10 +22,10 @@ public class ClientInfo {
 
 
     public String getClientName() {
-        return clientName;
+        return ClientName;
     }
     public void setClientName(String clientName) {
-        this.clientName = clientName;
+        this.ClientName = clientName;
     }
 
     public String getClientEmail() {

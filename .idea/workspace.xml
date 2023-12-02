@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10b9e2f6-636e-4453-8d6d-544d23a51c98" name="Changes" comment="adding testng for allure">
+    <list default="true" id="10b9e2f6-636e-4453-8d6d-544d23a51c98" name="Changes" comment="adding new test data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/ClientInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/ClientTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ClientTestData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +74,7 @@
       <recent name="C:\Users\Hendy\Desktop\FW_Skeleton\RestAssuredT\suites" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/suites/allure_testng.xml">
+  <component name="RunManager" selected="TestNG.RegisterAPiWithAllure.mostEnhancedValidateThatClientCanBeCreated">
     <configuration name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/test/suites/tesngfile.xml" type="TestNG" nameIsGenerated="true">
       <module name="RestAssuredT" />
       <shortenClasspath name="NONE" />
@@ -110,16 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredT" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegisterAPiWithAllure.mostEnhancedValidateThatClientCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredT" />
       <extension name="coverage">
@@ -131,6 +124,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.RegisterAPiWithAllure" />
       <option name="METHOD_NAME" value="mostEnhancedValidateThatClientCanBeCreated" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterClientAPITests" />
+      <option name="METHOD_NAME" value="enhancedValidateThatClientCanBeCreated" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -201,17 +212,17 @@
       <item itemvalue="TestNG.testthelogger" />
       <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/suites/allure_testng.xml" />
       <item itemvalue="TestNG.RegisterAPiWithAllure.mostEnhancedValidateThatClientCanBeCreated" />
+      <item itemvalue="TestNG.RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" />
       <item itemvalue="TestNG.&lt;default&gt;" />
-      <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" />
       <item itemvalue="TestNG.RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/suites/allure_testng.xml" />
         <item itemvalue="TestNG.RegisterAPiWithAllure.mostEnhancedValidateThatClientCanBeCreated" />
+        <item itemvalue="TestNG.RegisterClientAPITests.enhancedValidateThatClientCanBeCreated" />
+        <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/suites/allure_testng.xml" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.RegisterClientAPITests.mostEnhancedValidateThatClientCanBeCreated" />
-        <item itemvalue="TestNG.C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700729584858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding new test data">
+      <option name="closed" value="true" />
+      <created>1700808868118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700808868118</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +294,8 @@
     <MESSAGE value="adding log4j and testng xml file" />
     <MESSAGE value="adding listeners plus adding maven plugins plus adding allure report features" />
     <MESSAGE value="adding testng for allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding testng for allure" />
+    <MESSAGE value="adding new test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding new test data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -284,11 +304,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/tests/TestByDataDriven.java</url>
           <line>33</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegisterAPiWithAllure.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

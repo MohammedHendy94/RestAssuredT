@@ -32,6 +32,13 @@ public class BaseTest {
                 .setContentType(ContentType.JSON)
                 .log(LogDetail.ALL).build();
     }
+    public static RequestSpecification dummuJsonReqSpec(){
+        return  new RequestSpecBuilder()
+                .setBaseUri("https://dummyjson.com/")
+                .setContentType(ContentType.JSON)
+                .log(LogDetail.ALL).build();
+    }
+
     public static ResponseSpecification responseSpecification(){
         return new ResponseSpecBuilder().log(LogDetail.ALL).build();
     }

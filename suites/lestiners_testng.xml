@@ -4,8 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/Hendy/Desktop/FW_Skeleton/RestAssuredT/src/test/java/tests/RegisterClientAPITests.java">
         <classes>
             <class name="tests.RegisterClientAPITests">
-                <methods>
-                    <include name="mostEnhancedValidateThatClientCanBeCreated"/>
+                <methods><include name="mostEnhancedValidateThatClientCanBeCreated"/>
                 </methods>
             </class>
         </classes>

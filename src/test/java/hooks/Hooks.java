@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 public class Hooks {
     @BeforeMethod
     public void beforeMethods(){
-        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        System.out.println("before execute the method");
+       // RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
     }
 }

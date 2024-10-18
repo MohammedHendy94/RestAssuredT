@@ -46,19 +46,6 @@ public class UserLoginTests extends BaseTest {
                 .statusCode(200)
                 .body("message", Matchers.equalTo("Login successful"))
                 .body("data.id", Matchers.equalTo("671274c22b47f201538b66c3"));
-    }
 
-    public String returnUserToken( String email, String password) throws JsonProcessingException {
-        loginInfo = new LoginInfo(email, password);
-        String reqBody = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(loginInfo);
-        loginInfo = objectMapper.readValue(reqBody, LoginInfo.class);
-       Response response= RestAssured.given(getRequestSpecifications()).filter(new AllureRestAssured())
-                .basePath("users/login")
-                .body(reqBody)
-                .post()
-                .then().spec(responseSpecification())
-               .extract().response();
-     accessToken =  response.path("data.token");
-     return accessToken;
     }
 }

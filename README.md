@@ -1,6 +1,6 @@
 # Mohammed-Hendy
 ## Introduction
- This project automate the Notes APIs ([https://e-commerce-kib.netlify.app/](https://practice.expandtesting.com/notes/api/api-docs/)) main High level scenarios:
+ This project automate the Notes APIs https://practice.expandtesting.com/notes/api/api-docs/#google_vignette main High level scenarios:
 1.	Verify that the API is healthy
 2.	Register a new user and verify it’s created
 3.	Log in with a user and verify the profile information
